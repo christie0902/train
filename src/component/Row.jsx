@@ -1,15 +1,19 @@
 import Seat from "./Seat";
-import { useState } from "react";
 
 const Row = ({rowNumber, numberOfSeats, totalRows}) => {
   const seatArray = [];
 
 
-  for (let i = rowNumber; i < numberOfSeats; i+totalRows) {
+  for (let i = rowNumber; i < numberOfSeats; i+=4) {
     seatArray.push (<Seat number = {i + 1}/>)
   }
 
-  return <>{seatArray}</>;
+  return <>
+  <div className="row">
+  {seatArray}
+  </div>
+  </>;
 };
 
 export default Row;
+
