@@ -3,19 +3,20 @@ import "./App.css";
 import Row from "./component/Row";
 
 function App() {
+  let totalSeats = 40;
 
   return (
     <>
       <div className="train-carriage">
         <div className="carriage-row">
          
-          <Row rowNumber={0} numberOfSeats={40} totalRows={4}/>
-          <Row rowNumber={1} numberOfSeats={40} totalRows={4}/>
+          <Row rowNumber={0} numberOfSeats={totalSeats} totalRows={4}/>
+          <Row rowNumber={1} numberOfSeats={totalSeats} totalRows={4}/>
 
         <div className="aisle-spacer"></div>
 
-          <Row rowNumber={2} numberOfSeats={40} totalRows={4}/>
-          <Row rowNumber={3} numberOfSeats={40} totalRows={4}/>
+          <Row rowNumber={2} numberOfSeats={totalSeats} totalRows={4}/>
+          <Row rowNumber={3} numberOfSeats={totalSeats} totalRows={4}/>
 
         </div>
       </div>
