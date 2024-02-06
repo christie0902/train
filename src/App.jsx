@@ -6,12 +6,12 @@ function App() {
 
   return (
     <>
-      <div class="train-carriage">
-        <div class="carriage-row">
+      <div className="train-carriage">
+        <div className="carriage-row">
          <Row rowNumber={0} numberOfSeats={30} totalRows={4}/>
          <Row rowNumber={1} numberOfSeats={30} totalRows={4}/>
          
-        <div class="aisle-spacer"></div>
+        <div className="aisle-spacer"></div>
 
          <Row rowNumber={2} numberOfSeats={30} totalRows={4}/>
          <Row rowNumber={3} numberOfSeats={30} totalRows={4}/>
